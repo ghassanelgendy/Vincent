@@ -84,6 +84,7 @@ h6 {
     padding: 25px 80px;
     gap: 20px;
     align-items: baseline;
+    text-align: center;
 }
 
 .header .logo {
@@ -112,7 +113,7 @@ a,
     font-size: 48px;
 }
 
-.hero button {
+button {
     color: var(--sec-clr);
     background-color: var(--action-clr);
     border-radius: 5px;
@@ -168,4 +169,59 @@ a,
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.quote {
+    margin: 50px 0;
+    background-color: rgb(238, 236, 236);
+    padding: 80px 160px
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 25px;
+}
+
+.author {
+    text-align: right;
+    font-weight: 800;
+}
+
+.call-action button {
+    border: white solid 1.8px;
+    flex-shrink: 0;
+}
+
+.call-card {
+    background-color: var(--action-clr);
+    color: var(--sec-clr);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+    margin: 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    flex: 1;
+}
+
+
+.call-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--dark-bg-clr);
+    color: var(--sec-clr);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
