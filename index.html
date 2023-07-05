@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vincent van Gogh</title>
+		<title>Vincent</title>
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -13,9 +13,9 @@
 	<body>
 		<header class="header">
 			<div class="logo"><a href="#">Vincent</a></div>
-			<a href="#">Gallery</a>
-			<a href="#">History</a>
-			<a href="#">References</a>
+			<a class="btn" href="#">Gallery</a>
+			<a class="btn" href="#">History</a>
+			<a class="btn" href="#">References</a>
 		</header>
 		<section class="hero">
 			<div class="text">
@@ -25,7 +25,10 @@
 					<span class="highlight">Vincent van Gogh</span>, a painter whose
 					passion, creativity, and suffering continue to inspire us today.
 				</p>
-				<button><a href="#">Gallery</a></button>
+
+				<button class="button">
+					<span><a href="#">Gallery</a></span>
+				</button>
 			</div>
 			<div class="img-wrapper">
 				<img src="./assets/Self-portrait.jpg" alt="" />
@@ -40,22 +43,38 @@
 			<div class="flex-wrapper">
 				<div class="card">
 					<div class="card-content" id="card-1"></div>
-					<p class="car-text">Starry Night</p>
+					<p class="card-text">Starry Night</p>
 				</div>
 				<div class="card">
 					<div class="card-content" id="card-2"></div>
-					<p class="car-text">Sunflowers</p>
+					<p class="card-text">Sunflowers</p>
 				</div>
 				<div class="card">
 					<div class="card-content" id="card-3"></div>
-					<p class="car-text">The Potato Eaters</p>
+					<p class="card-text">The Potato Eaters</p>
 				</div>
 				<div class="card">
 					<div class="card-content" id="card-4"></div>
-					<p class="car-text">Café Terrace at Night</p>
+					<p class="card-text">Café Terrace at Night</p>
 				</div>
 			</div>
-			<a href="#" class="view-more">See more..</a>
+			<a href="#">
+				<button class="cssbuttons-io-button">
+					<p class="see-more">See more..</p>
+					<div class="icon">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="24"
+							height="24">
+							<path fill="none" d="M0 0h24v24H0z"></path>
+							<path
+								fill="currentColor"
+								d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+						</svg>
+					</div>
+				</button>
+			</a>
 		</section>
 		<section class="quote">
 			<p class="quote-text">
@@ -66,10 +85,15 @@
 		<section class="call-action">
 			<div class="call-card">
 				<div class="card-txt">
-					<h2>Call to action! now!!</h2>
-					<p>Sign up 3shan tekdjikasjdcjkasnvjkrn fkdsn snijkadasda~!</p>
+					<h2>Like what you see?</h2>
+					<p>
+						Check more of my projects on my GitHub account or visit my website
+					</p>
 				</div>
-				<button>Sign up</button>
+
+				<button class="button card-sign">
+					<a href="https://github.com/ghassanelgendy"> My GitHub! </a>
+				</button>
 			</div>
 		</section>
 		<footer>
@@ -79,7 +103,7 @@
 					class="social-media"
 					src="./assets/github.svg"
 					alt="my github account"
-					title="Visit my Github!" />
+					title="Visit my GitHub!" />
 			</a>
 		</footer>
 	</body>
